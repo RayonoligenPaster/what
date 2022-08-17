@@ -1,0 +1,224 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local nnpasteWATERMARKWOOWOWOOWOW = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local purplebottom = Instance.new("Frame")
+local nnpaste = Instance.new("TextLabel")
+local seperate1 = Instance.new("TextLabel")
+local fps = Instance.new("TextLabel")
+local seperate2 = Instance.new("TextLabel")
+local ping = Instance.new("TextLabel")
+local seperate3 = Instance.new("TextLabel")
+local timer = Instance.new("TextLabel")
+local seperate4 = Instance.new("TextLabel")
+local datee = Instance.new("TextLabel")
+local slashDesign1 = Instance.new("TextLabel")
+local slashDesign2 = Instance.new("TextLabel")
+
+--Properties:
+
+nnpasteWATERMARKWOOWOWOOWOW.Name = "nnpaste WATERMARK WOOWOWOOWOW"
+nnpasteWATERMARKWOOWOWOOWOW.Parent = game.CoreGui
+nnpasteWATERMARKWOOWOWOOWOW.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+nnpasteWATERMARKWOOWOWOOWOW.DisplayOrder = 420133769
+
+main.Name = "main"
+main.Parent = nnpasteWATERMARKWOOWOWOOWOW
+main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.00354165584, 0, -0.000261604786, 0)
+main.Size = UDim2.new(0.287499994, 0, 0.0364025682, 0)
+main.Active = true
+main.Draggable = true
+
+purplebottom.Name = "purple bottom"
+purplebottom.Parent = main
+purplebottom.BackgroundColor3 = Color3.fromRGB(113, 13, 255)
+purplebottom.BorderSizePixel = 0
+purplebottom.Position = UDim2.new(0, 0, 0.909090817, 0)
+purplebottom.Size = UDim2.new(1, 0, 0.117647059, 0)
+
+nnpaste.Name = "nnpaste"
+nnpaste.Parent = main
+nnpaste.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nnpaste.BackgroundTransparency = 1.000
+nnpaste.Position = UDim2.new(-0.0181159414, 0, 0.117647059, 0)
+nnpaste.Size = UDim2.new(0.237318844, 0, 0.735294104, 0)
+nnpaste.Font = Enum.Font.GothamBold
+nnpaste.Text = "NNPASTE"
+nnpaste.TextColor3 = Color3.fromRGB(113, 13, 255)
+nnpaste.TextSize = 20.000
+nnpaste.TextStrokeTransparency = 0.000
+nnpaste.TextWrapped = true
+
+seperate1.Name = "seperate1"
+seperate1.Parent = main
+seperate1.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+seperate1.BackgroundTransparency = 1.000
+seperate1.BorderSizePixel = 0
+seperate1.Position = UDim2.new(0.0873223022, 0, 0.117647119, 0)
+seperate1.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
+seperate1.Font = Enum.Font.GothamBold
+seperate1.Text = "|"
+seperate1.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate1.TextSize = 20.000
+seperate1.TextWrapped = true
+
+fps.Name = "fps"
+fps.Parent = main
+fps.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+fps.BackgroundTransparency = 1.000
+fps.BorderSizePixel = 0
+fps.Position = UDim2.new(0.164435476, 0, 0.117647119, 0)
+fps.Size = UDim2.new(0.214552671, 0, 0.735294104, 0)
+fps.Font = Enum.Font.GothamBold
+fps.Text = "390 fps"
+fps.TextColor3 = Color3.fromRGB(255, 235, 255)
+fps.TextSize = 15.000
+fps.TextWrapped = true
+
+seperate2.Name = "seperate2"
+seperate2.Parent = main
+seperate2.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+seperate2.BackgroundTransparency = 1.000
+seperate2.BorderSizePixel = 0
+seperate2.Position = UDim2.new(0.219568714, 0, 0.117647119, 0)
+seperate2.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
+seperate2.Font = Enum.Font.GothamBold
+seperate2.Text = "|"
+seperate2.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate2.TextSize = 20.000
+seperate2.TextWrapped = true
+
+ping.Name = "ping"
+ping.Parent = main
+ping.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+ping.BackgroundTransparency = 1.000
+ping.BorderSizePixel = 0
+ping.Position = UDim2.new(0.266670167, 0, 0.117647059, 0)
+ping.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
+ping.Font = Enum.Font.GothamBold
+ping.Text = "0 ms"
+ping.TextColor3 = Color3.fromRGB(255, 235, 255)
+ping.TextSize = 15.000
+ping.TextWrapped = true
+
+seperate3.Name = "seperate3"
+seperate3.Parent = main
+seperate3.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+seperate3.BackgroundTransparency = 1.000
+seperate3.BorderSizePixel = 0
+seperate3.Position = UDim2.new(0.311960042, 0, 0.117647119, 0)
+seperate3.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
+seperate3.Font = Enum.Font.GothamBold
+seperate3.Text = "|"
+seperate3.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate3.TextSize = 20.000
+seperate3.TextWrapped = true
+
+timer.Name = "timer"
+timer.Parent = main
+timer.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+timer.BackgroundTransparency = 1.000
+timer.BorderSizePixel = 0
+timer.Position = UDim2.new(0.380800605, 0, 0.117647052, 0)
+timer.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
+timer.Font = Enum.Font.GothamBold
+timer.Text = "23:59:59"
+timer.TextColor3 = Color3.fromRGB(255, 235, 255)
+timer.TextSize = 15.000
+timer.TextWrapped = true
+
+seperate4.Name = "seperate4"
+seperate4.Parent = main
+seperate4.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+seperate4.BackgroundTransparency = 1.000
+seperate4.BorderSizePixel = 0
+seperate4.Position = UDim2.new(0.440583169, 0, 0.117647119, 0)
+seperate4.Size = UDim2.new(0.253623188, 0, 0.735294104, 0)
+seperate4.Font = Enum.Font.GothamBold
+seperate4.Text = "|"
+seperate4.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate4.TextSize = 20.000
+seperate4.TextWrapped = true
+
+datee.Name = "datee"
+datee.Parent = main
+datee.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+datee.BackgroundTransparency = 1.000
+datee.BorderSizePixel = 0
+datee.Position = UDim2.new(0.561952531, 0, 0.117647059, 0)
+datee.Size = UDim2.new(0.365942031, 0, 0.735294104, 0)
+datee.Font = Enum.Font.GothamBold
+datee.Text = "Wednesday, August 17"
+datee.TextColor3 = Color3.fromRGB(255, 235, 255)
+datee.TextSize = 15.000
+datee.TextWrapped = true
+
+slashDesign1.Name = "slashDesign1"
+slashDesign1.Parent = main
+slashDesign1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+slashDesign1.BackgroundTransparency = 1.000
+slashDesign1.Position = UDim2.new(0.79347837, 0, -0.600768864, 0)
+slashDesign1.Size = UDim2.new(0.362318873, 0, 2.08880424, 0)
+slashDesign1.Font = Enum.Font.GothamBold
+slashDesign1.Text = "/"
+slashDesign1.TextColor3 = Color3.fromRGB(113, 13, 255)
+slashDesign1.TextSize = 41.000
+slashDesign1.TextWrapped = true
+
+slashDesign2.Name = "slashDesign2"
+slashDesign2.Parent = main
+slashDesign2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+slashDesign2.BackgroundTransparency = 1.000
+slashDesign2.Position = UDim2.new(0.766295969, 0, -0.30960691, 0)
+slashDesign2.Size = UDim2.new(0.362318873, 0, 1.54490101, 0)
+slashDesign2.Font = Enum.Font.GothamBold
+slashDesign2.Text = "/"
+slashDesign2.TextColor3 = Color3.fromRGB(113, 13, 255)
+slashDesign2.TextSize = 43.000
+slashDesign2.TextWrapped = true
+
+-- Scripts:
+
+local function TEBF_fake_script() -- fps.LocalScript 
+	local script = Instance.new('LocalScript', fps)
+
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function(frame) -- This will fire every time a frame is rendered
+		script.Parent.Text = math.round(1/frame) .. " fps"
+	end)
+end
+coroutine.wrap(TEBF_fake_script)()
+local function QTLUXHF_fake_script() -- ping.LocalScript 
+	local script = Instance.new('LocalScript', ping)
+
+	local PingStat = game:service("Stats").PerformanceStats.Ping
+	local function GetLatency()
+		return PingStat:GetValue() / 1000
+	end
+end
+coroutine.wrap(QTLUXHF_fake_script)()
+local function JYUXM_fake_script() -- timer.LocalScript 
+	local script = Instance.new('LocalScript', timer)
+
+	local RS = game["Run Service"] --Gets Run Service
+	while RS.Heartbeat:Wait() do --Loops
+		local dt = DateTime.now() --Gets the time
+		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") --Sets the time
+	end
+end
+coroutine.wrap(JYUXM_fake_script)()
+local function SDAZ_fake_script() -- datee.LocalScript 
+	local script = Instance.new('LocalScript', datee)
+
+	local RS = game["Run Service"] --Gets Run Service
+	while RS.Heartbeat:Wait() do --Loops
+		local dt = DateTime.now() --Gets the time
+		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") --Sets the time
+	end
+end
+coroutine.wrap(SDAZ_fake_script)()
