@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local nnpasteWATERMARKWOOWOWOOWOW = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local purplebottom = Instance.new("Frame")
@@ -21,18 +16,15 @@ local slashDesign2 = Instance.new("TextLabel")
 --Properties:
 
 nnpasteWATERMARKWOOWOWOOWOW.Name = "nnpaste WATERMARK WOOWOWOOWOW"
-nnpasteWATERMARKWOOWOWOOWOW.Parent = game.CoreGui
+nnpasteWATERMARKWOOWOWOOWOW.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 nnpasteWATERMARKWOOWOWOOWOW.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-nnpasteWATERMARKWOOWOWOOWOW.DisplayOrder = 420133769
 
 main.Name = "main"
 main.Parent = nnpasteWATERMARKWOOWOWOOWOW
 main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.00354165584, 0, -0.000261604786, 0)
+main.Position = UDim2.new(0.449086189, 0, -0.000261604786, 0)
 main.Size = UDim2.new(0.287499994, 0, 0.0364025682, 0)
-main.Active = true
-main.Draggable = true
 
 purplebottom.Name = "purple bottom"
 purplebottom.Parent = main
@@ -184,7 +176,7 @@ slashDesign2.TextWrapped = true
 
 -- Scripts:
 
-local function TEBF_fake_script() -- fps.LocalScript 
+local function WDERLSH_fake_script() -- fps.LocalScript 
 	local script = Instance.new('LocalScript', fps)
 
 	local RunService = game:GetService("RunService")
@@ -192,8 +184,8 @@ local function TEBF_fake_script() -- fps.LocalScript
 		script.Parent.Text = math.round(1/frame) .. " fps"
 	end)
 end
-coroutine.wrap(TEBF_fake_script)()
-local function QTLUXHF_fake_script() -- ping.LocalScript 
+coroutine.wrap(WDERLSH_fake_script)()
+local function RVVL_fake_script() -- ping.LocalScript 
 	local script = Instance.new('LocalScript', ping)
 
 	local PingStat = game:service("Stats").PerformanceStats.Ping
@@ -201,8 +193,8 @@ local function QTLUXHF_fake_script() -- ping.LocalScript
 		return PingStat:GetValue() / 1000
 	end
 end
-coroutine.wrap(QTLUXHF_fake_script)()
-local function JYUXM_fake_script() -- timer.LocalScript 
+coroutine.wrap(RVVL_fake_script)()
+local function JXMLKC_fake_script() -- timer.LocalScript 
 	local script = Instance.new('LocalScript', timer)
 
 	local RS = game["Run Service"] --Gets Run Service
@@ -211,8 +203,8 @@ local function JYUXM_fake_script() -- timer.LocalScript
 		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") --Sets the time
 	end
 end
-coroutine.wrap(JYUXM_fake_script)()
-local function SDAZ_fake_script() -- datee.LocalScript 
+coroutine.wrap(JXMLKC_fake_script)()
+local function VOZMKQG_fake_script() -- datee.LocalScript 
 	local script = Instance.new('LocalScript', datee)
 
 	local RS = game["Run Service"] --Gets Run Service
@@ -221,4 +213,4 @@ local function SDAZ_fake_script() -- datee.LocalScript
 		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") --Sets the time
 	end
 end
-coroutine.wrap(SDAZ_fake_script)()
+coroutine.wrap(VOZMKQG_fake_script)()
