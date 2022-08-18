@@ -1,8 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+--watermark for nnpaste.hvh
 local nnpasteWATERMARKWOOWOWOOWOW = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local purplebottom = Instance.new("Frame")
@@ -29,10 +25,8 @@ local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local slashDesign2 = Instance.new("TextLabel")
 local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 
---Properties:
-
 nnpasteWATERMARKWOOWOWOOWOW.Name = "nnpaste WATERMARK WOOWOWOOWOW"
-nnpasteWATERMARKWOOWOWOOWOW.Parent = game.CoreGui
+nnpasteWATERMARKWOOWOWOOWOW.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 nnpasteWATERMARKWOOWOWOOWOW.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 nnpasteWATERMARKWOOWOWOOWOW.DisplayOrder = 420133769
 nnpasteWATERMARKWOOWOWOOWOW.IgnoreGuiInset = true
@@ -41,8 +35,8 @@ main.Name = "main"
 main.Parent = nnpasteWATERMARKWOOWOWOOWOW
 main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.712244093, 0, -0.000261604786, 0)
-main.Size = UDim2.new(0.287499994, 0, 0.0364025682, 0)
+main.Position = UDim2.new(0.68255657, 0, -0.000261604902, 0)
+main.Size = UDim2.new(0.317187488, 0, 0.0364025682, 0)
 
 purplebottom.Name = "purple bottom"
 purplebottom.Parent = main
@@ -73,7 +67,7 @@ seperate1.Parent = main
 seperate1.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 seperate1.BackgroundTransparency = 1.000
 seperate1.BorderSizePixel = 0
-seperate1.Position = UDim2.new(0.0873223022, 0, 0.117647119, 0)
+seperate1.Position = UDim2.new(0.0758280456, 0, 0.0921878144, 0)
 seperate1.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate1.Font = Enum.Font.GothamBold
 seperate1.Text = "|"
@@ -90,7 +84,7 @@ fps.Parent = main
 fps.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 fps.BackgroundTransparency = 1.000
 fps.BorderSizePixel = 0
-fps.Position = UDim2.new(0.164435476, 0, 0.117647119, 0)
+fps.Position = UDim2.new(0.143087283, 0, 0.0921878144, 0)
 fps.Size = UDim2.new(0.214552671, 0, 0.735294104, 0)
 fps.Font = Enum.Font.GothamBold
 fps.Text = "390 fps"
@@ -107,7 +101,7 @@ seperate2.Parent = main
 seperate2.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 seperate2.BackgroundTransparency = 1.000
 seperate2.BorderSizePixel = 0
-seperate2.Position = UDim2.new(0.219568714, 0, 0.117647119, 0)
+seperate2.Position = UDim2.new(0.191639543, 0, 0.0921878144, 0)
 seperate2.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate2.Font = Enum.Font.GothamBold
 seperate2.Text = "|"
@@ -124,10 +118,10 @@ ping.Parent = main
 ping.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 ping.BackgroundTransparency = 1.000
 ping.BorderSizePixel = 0
-ping.Position = UDim2.new(0.266670167, 0, 0.117647059, 0)
+ping.Position = UDim2.new(0.251884133, 0, 0.0921877548, 0)
 ping.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 ping.Font = Enum.Font.GothamBold
-ping.Text = "0 ms"
+ping.Text = "100 ms"
 ping.TextColor3 = Color3.fromRGB(255, 235, 255)
 ping.TextScaled = true
 ping.TextSize = 15.000
@@ -238,41 +232,41 @@ UITextSizeConstraint_11.MaxTextSize = 43
 
 -- Scripts:
 
-local function GXQH_fake_script() -- fps.LocalScript 
+local function ZNBDA_fake_script() 
 	local script = Instance.new('LocalScript', fps)
 
 	local RunService = game:GetService("RunService")
-	RunService.RenderStepped:Connect(function(frame) -- This will fire every time a frame is rendered
+	RunService.RenderStepped:Connect(function(frame) 
 		script.Parent.Text = math.round(1/frame) .. " fps"
 	end)
 end
-coroutine.wrap(GXQH_fake_script)()
-local function ELONA_fake_script() -- ping.LocalScript 
-    local script = Instance.new('LocalScript', ping)
+coroutine.wrap(ZNBDA_fake_script)()
+local function TAVISU_fake_script()
+	local script = Instance.new('LocalScript', ping)
 
-    local PingStat = game:service("Stats").PerformanceStats.Ping
-    game:GetService("RunService").RenderStepped:connect(function()
-    script.Parent.Text = tostring(math.floor(PingStat:GetValue())) .. " ms"
-    end)
+	local PingStat = game:service("Stats").PerformanceStats.Ping
+	game:GetService("RunService").RenderStepped:connect(function()
+		script.Parent.Text = tostring(math.floor(PingStat:GetValue())) .. " ms"
+	end)
 end
-coroutine.wrap(ELONA_fake_script)()
-local function GCND_fake_script() -- timer.LocalScript 
+coroutine.wrap(TAVISU_fake_script)()
+local function XQGJM_fake_script() 
 	local script = Instance.new('LocalScript', timer)
 
-	local RS = game["Run Service"] --Gets Run Service
-	while RS.Heartbeat:Wait() do --Loops
-		local dt = DateTime.now() --Gets the time
-		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") --Sets the time
+	local RS = game["Run Service"] 
+	while RS.Heartbeat:Wait() do 
+		local dt = DateTime.now() 
+		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") 
 	end
 end
-coroutine.wrap(GCND_fake_script)()
-local function XKDWMSP_fake_script() -- datee.LocalScript 
+coroutine.wrap(XQGJM_fake_script)()
+local function BNEZ_fake_script() 
 	local script = Instance.new('LocalScript', datee)
 
-	local RS = game["Run Service"] --Gets Run Service
-	while RS.Heartbeat:Wait() do --Loops
-		local dt = DateTime.now() --Gets the time
-		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") --Sets the time
+	local RS = game["Run Service"] 
+	while RS.Heartbeat:Wait() do 
+		local dt = DateTime.now() 
+		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") 
 	end
 end
-coroutine.wrap(XKDWMSP_fake_script)()
+coroutine.wrap(BNEZ_fake_script)()
