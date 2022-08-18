@@ -32,7 +32,7 @@ local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 --Properties:
 
 nnpasteWATERMARKWOOWOWOOWOW.Name = "nnpaste WATERMARK WOOWOWOOWOW"
-nnpasteWATERMARKWOOWOWOOWOW.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+nnpasteWATERMARKWOOWOWOOWOW.Parent = game.CoreGui
 nnpasteWATERMARKWOOWOWOOWOW.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 nnpasteWATERMARKWOOWOWOOWOW.DisplayOrder = 420133769
 nnpasteWATERMARKWOOWOWOOWOW.IgnoreGuiInset = true
