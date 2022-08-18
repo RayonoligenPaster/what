@@ -1,17 +1,33 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local nnpasteWATERMARKWOOWOWOOWOW = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local purplebottom = Instance.new("Frame")
 local nnpaste = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local seperate1 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local fps = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local seperate2 = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local ping = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local seperate3 = Instance.new("TextLabel")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local timer = Instance.new("TextLabel")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local seperate4 = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local datee = Instance.new("TextLabel")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local slashDesign1 = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local slashDesign2 = Instance.new("TextLabel")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -23,7 +39,7 @@ main.Name = "main"
 main.Parent = nnpasteWATERMARKWOOWOWOOWOW
 main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.449086189, 0, -0.000261604786, 0)
+main.Position = UDim2.new(0.712244093, 0, -0.000261604786, 0)
 main.Size = UDim2.new(0.287499994, 0, 0.0364025682, 0)
 
 purplebottom.Name = "purple bottom"
@@ -42,9 +58,13 @@ nnpaste.Size = UDim2.new(0.237318844, 0, 0.735294104, 0)
 nnpaste.Font = Enum.Font.GothamBold
 nnpaste.Text = "NNPASTE"
 nnpaste.TextColor3 = Color3.fromRGB(113, 13, 255)
+nnpaste.TextScaled = true
 nnpaste.TextSize = 20.000
 nnpaste.TextStrokeTransparency = 0.000
 nnpaste.TextWrapped = true
+
+UITextSizeConstraint.Parent = nnpaste
+UITextSizeConstraint.MaxTextSize = 20
 
 seperate1.Name = "seperate1"
 seperate1.Parent = main
@@ -56,8 +76,12 @@ seperate1.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate1.Font = Enum.Font.GothamBold
 seperate1.Text = "|"
 seperate1.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate1.TextScaled = true
 seperate1.TextSize = 20.000
 seperate1.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = seperate1
+UITextSizeConstraint_2.MaxTextSize = 20
 
 fps.Name = "fps"
 fps.Parent = main
@@ -69,8 +93,12 @@ fps.Size = UDim2.new(0.214552671, 0, 0.735294104, 0)
 fps.Font = Enum.Font.GothamBold
 fps.Text = "390 fps"
 fps.TextColor3 = Color3.fromRGB(255, 235, 255)
+fps.TextScaled = true
 fps.TextSize = 15.000
 fps.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = fps
+UITextSizeConstraint_3.MaxTextSize = 15
 
 seperate2.Name = "seperate2"
 seperate2.Parent = main
@@ -82,8 +110,12 @@ seperate2.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate2.Font = Enum.Font.GothamBold
 seperate2.Text = "|"
 seperate2.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate2.TextScaled = true
 seperate2.TextSize = 20.000
 seperate2.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = seperate2
+UITextSizeConstraint_4.MaxTextSize = 20
 
 ping.Name = "ping"
 ping.Parent = main
@@ -95,8 +127,12 @@ ping.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 ping.Font = Enum.Font.GothamBold
 ping.Text = "0 ms"
 ping.TextColor3 = Color3.fromRGB(255, 235, 255)
+ping.TextScaled = true
 ping.TextSize = 15.000
 ping.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = ping
+UITextSizeConstraint_5.MaxTextSize = 15
 
 seperate3.Name = "seperate3"
 seperate3.Parent = main
@@ -108,8 +144,12 @@ seperate3.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate3.Font = Enum.Font.GothamBold
 seperate3.Text = "|"
 seperate3.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate3.TextScaled = true
 seperate3.TextSize = 20.000
 seperate3.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = seperate3
+UITextSizeConstraint_6.MaxTextSize = 20
 
 timer.Name = "timer"
 timer.Parent = main
@@ -121,8 +161,12 @@ timer.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 timer.Font = Enum.Font.GothamBold
 timer.Text = "23:59:59"
 timer.TextColor3 = Color3.fromRGB(255, 235, 255)
+timer.TextScaled = true
 timer.TextSize = 15.000
 timer.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = timer
+UITextSizeConstraint_7.MaxTextSize = 15
 
 seperate4.Name = "seperate4"
 seperate4.Parent = main
@@ -134,8 +178,12 @@ seperate4.Size = UDim2.new(0.253623188, 0, 0.735294104, 0)
 seperate4.Font = Enum.Font.GothamBold
 seperate4.Text = "|"
 seperate4.TextColor3 = Color3.fromRGB(255, 235, 255)
+seperate4.TextScaled = true
 seperate4.TextSize = 20.000
 seperate4.TextWrapped = true
+
+UITextSizeConstraint_8.Parent = seperate4
+UITextSizeConstraint_8.MaxTextSize = 20
 
 datee.Name = "datee"
 datee.Parent = main
@@ -147,8 +195,12 @@ datee.Size = UDim2.new(0.365942031, 0, 0.735294104, 0)
 datee.Font = Enum.Font.GothamBold
 datee.Text = "Wednesday, August 17"
 datee.TextColor3 = Color3.fromRGB(255, 235, 255)
+datee.TextScaled = true
 datee.TextSize = 15.000
 datee.TextWrapped = true
+
+UITextSizeConstraint_9.Parent = datee
+UITextSizeConstraint_9.MaxTextSize = 15
 
 slashDesign1.Name = "slashDesign1"
 slashDesign1.Parent = main
@@ -159,8 +211,12 @@ slashDesign1.Size = UDim2.new(0.362318873, 0, 2.08880424, 0)
 slashDesign1.Font = Enum.Font.GothamBold
 slashDesign1.Text = "/"
 slashDesign1.TextColor3 = Color3.fromRGB(113, 13, 255)
+slashDesign1.TextScaled = true
 slashDesign1.TextSize = 41.000
 slashDesign1.TextWrapped = true
+
+UITextSizeConstraint_10.Parent = slashDesign1
+UITextSizeConstraint_10.MaxTextSize = 41
 
 slashDesign2.Name = "slashDesign2"
 slashDesign2.Parent = main
@@ -171,12 +227,16 @@ slashDesign2.Size = UDim2.new(0.362318873, 0, 1.54490101, 0)
 slashDesign2.Font = Enum.Font.GothamBold
 slashDesign2.Text = "/"
 slashDesign2.TextColor3 = Color3.fromRGB(113, 13, 255)
+slashDesign2.TextScaled = true
 slashDesign2.TextSize = 43.000
 slashDesign2.TextWrapped = true
 
+UITextSizeConstraint_11.Parent = slashDesign2
+UITextSizeConstraint_11.MaxTextSize = 43
+
 -- Scripts:
 
-local function WDERLSH_fake_script() -- fps.LocalScript 
+local function GXQH_fake_script() -- fps.LocalScript 
 	local script = Instance.new('LocalScript', fps)
 
 	local RunService = game:GetService("RunService")
@@ -184,8 +244,8 @@ local function WDERLSH_fake_script() -- fps.LocalScript
 		script.Parent.Text = math.round(1/frame) .. " fps"
 	end)
 end
-coroutine.wrap(WDERLSH_fake_script)()
-local function RVVL_fake_script() -- ping.LocalScript 
+coroutine.wrap(GXQH_fake_script)()
+local function ELONA_fake_script() -- ping.LocalScript 
 	local script = Instance.new('LocalScript', ping)
 
 	local PingStat = game:service("Stats").PerformanceStats.Ping
@@ -193,8 +253,8 @@ local function RVVL_fake_script() -- ping.LocalScript
 		return PingStat:GetValue() / 1000
 	end
 end
-coroutine.wrap(RVVL_fake_script)()
-local function JXMLKC_fake_script() -- timer.LocalScript 
+coroutine.wrap(ELONA_fake_script)()
+local function GCND_fake_script() -- timer.LocalScript 
 	local script = Instance.new('LocalScript', timer)
 
 	local RS = game["Run Service"] --Gets Run Service
@@ -203,8 +263,8 @@ local function JXMLKC_fake_script() -- timer.LocalScript
 		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") --Sets the time
 	end
 end
-coroutine.wrap(JXMLKC_fake_script)()
-local function VOZMKQG_fake_script() -- datee.LocalScript 
+coroutine.wrap(GCND_fake_script)()
+local function XKDWMSP_fake_script() -- datee.LocalScript 
 	local script = Instance.new('LocalScript', datee)
 
 	local RS = game["Run Service"] --Gets Run Service
@@ -213,4 +273,4 @@ local function VOZMKQG_fake_script() -- datee.LocalScript
 		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") --Sets the time
 	end
 end
-coroutine.wrap(VOZMKQG_fake_script)()
+coroutine.wrap(XKDWMSP_fake_script)()
