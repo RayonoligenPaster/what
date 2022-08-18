@@ -248,12 +248,12 @@ local function GXQH_fake_script() -- fps.LocalScript
 end
 coroutine.wrap(GXQH_fake_script)()
 local function ELONA_fake_script() -- ping.LocalScript 
-	local script = Instance.new('LocalScript', ping)
+    local script = Instance.new('LocalScript', ping)
 
-	local PingStat = game:service("Stats").PerformanceStats.Ping
-	game:GetService("RunService").RenderStepped:connect(function()
-	script.Parent.Text = tostring(PingStat:GetValue()) .. " ms"
-	end)
+    local PingStat = game:service("Stats").PerformanceStats.Ping
+    game:GetService("RunService").RenderStepped:connect(function()
+    script.Parent.Text = tostring(math.floor(PingStat:GetValue())) .. " ms"
+    end)
 end
 coroutine.wrap(ELONA_fake_script)()
 local function GCND_fake_script() -- timer.LocalScript 
