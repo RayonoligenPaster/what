@@ -251,9 +251,7 @@ local function ELONA_fake_script() -- ping.LocalScript
 	local script = Instance.new('LocalScript', ping)
 
 	local PingStat = game:service("Stats").PerformanceStats.Ping
-	local function GetLatency()
-		return PingStat:GetValue() / 1000
-	end
+	script.Parent.Text = tostring(PingStat:GetValue() / 1000) .. " ms"
 end
 coroutine.wrap(ELONA_fake_script)()
 local function GCND_fake_script() -- timer.LocalScript 
