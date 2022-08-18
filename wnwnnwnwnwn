@@ -1,4 +1,4 @@
---watermark for nnpaste.hvh
+-- lmao
 local nnpasteWATERMARKWOOWOWOOWOW = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local purplebottom = Instance.new("Frame")
@@ -67,7 +67,7 @@ seperate1.Parent = main
 seperate1.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 seperate1.BackgroundTransparency = 1.000
 seperate1.BorderSizePixel = 0
-seperate1.Position = UDim2.new(0.0758280456, 0, 0.0921878144, 0)
+seperate1.Position = UDim2.new(0.0758280456, 0, 0.117647119, 0)
 seperate1.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate1.Font = Enum.Font.GothamBold
 seperate1.Text = "|"
@@ -101,7 +101,7 @@ seperate2.Parent = main
 seperate2.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 seperate2.BackgroundTransparency = 1.000
 seperate2.BorderSizePixel = 0
-seperate2.Position = UDim2.new(0.191639543, 0, 0.0921878144, 0)
+seperate2.Position = UDim2.new(0.191639543, 0, 0.117647119, 0)
 seperate2.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate2.Font = Enum.Font.GothamBold
 seperate2.Text = "|"
@@ -135,7 +135,7 @@ seperate3.Parent = main
 seperate3.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 seperate3.BackgroundTransparency = 1.000
 seperate3.BorderSizePixel = 0
-seperate3.Position = UDim2.new(0.311960042, 0, 0.117647119, 0)
+seperate3.Position = UDim2.new(0.310317159, 0, 0.117647111, 0)
 seperate3.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 seperate3.Font = Enum.Font.GothamBold
 seperate3.Text = "|"
@@ -152,7 +152,7 @@ timer.Parent = main
 timer.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 timer.BackgroundTransparency = 1.000
 timer.BorderSizePixel = 0
-timer.Position = UDim2.new(0.380800605, 0, 0.117647052, 0)
+timer.Position = UDim2.new(0.380800605, 0, 0.0921877474, 0)
 timer.Size = UDim2.new(0.23550725, 0, 0.735294104, 0)
 timer.Font = Enum.Font.GothamBold
 timer.Text = "23:59:59"
@@ -186,7 +186,7 @@ datee.Parent = main
 datee.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
 datee.BackgroundTransparency = 1.000
 datee.BorderSizePixel = 0
-datee.Position = UDim2.new(0.561952531, 0, 0.117647059, 0)
+datee.Position = UDim2.new(0.573452771, 0, 0.0921877548, 0)
 datee.Size = UDim2.new(0.365942031, 0, 0.735294104, 0)
 datee.Font = Enum.Font.GothamBold
 datee.Text = "Wednesday, August 17"
@@ -232,16 +232,16 @@ UITextSizeConstraint_11.MaxTextSize = 43
 
 -- Scripts:
 
-local function ZNBDA_fake_script() 
+local function TYKL_fake_script() -- fps.LocalScript 
 	local script = Instance.new('LocalScript', fps)
 
 	local RunService = game:GetService("RunService")
-	RunService.RenderStepped:Connect(function(frame) 
+	RunService.RenderStepped:Connect(function(frame) -- This will fire every time a frame is rendered
 		script.Parent.Text = math.round(1/frame) .. " fps"
 	end)
 end
-coroutine.wrap(ZNBDA_fake_script)()
-local function TAVISU_fake_script()
+coroutine.wrap(TYKL_fake_script)()
+local function IYIG_fake_script() -- ping.LocalScript 
 	local script = Instance.new('LocalScript', ping)
 
 	local PingStat = game:service("Stats").PerformanceStats.Ping
@@ -249,24 +249,24 @@ local function TAVISU_fake_script()
 		script.Parent.Text = tostring(math.floor(PingStat:GetValue())) .. " ms"
 	end)
 end
-coroutine.wrap(TAVISU_fake_script)()
-local function XQGJM_fake_script() 
+coroutine.wrap(IYIG_fake_script)()
+local function HOCVL_fake_script() -- timer.LocalScript 
 	local script = Instance.new('LocalScript', timer)
 
-	local RS = game["Run Service"] 
-	while RS.Heartbeat:Wait() do 
-		local dt = DateTime.now() 
-		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") 
+	local RS = game["Run Service"] --Gets Run Service
+	while RS.Heartbeat:Wait() do --Loops
+		local dt = DateTime.now() --Gets the time
+		script.Parent.Text = dt:FormatLocalTime("LTS", "zh-cn") --Sets the time
 	end
 end
-coroutine.wrap(XQGJM_fake_script)()
-local function BNEZ_fake_script() 
+coroutine.wrap(HOCVL_fake_script)()
+local function ZMZB_fake_script() -- datee.LocalScript 
 	local script = Instance.new('LocalScript', datee)
 
-	local RS = game["Run Service"] 
-	while RS.Heartbeat:Wait() do 
-		local dt = DateTime.now() 
-		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") 
+	local RS = game["Run Service"] --Gets Run Service
+	while RS.Heartbeat:Wait() do --Loops
+		local dt = DateTime.now() --Gets the time
+		script.Parent.Text = dt:FormatLocalTime("LL", "en-us") --Sets the time
 	end
 end
-coroutine.wrap(BNEZ_fake_script)()
+coroutine.wrap(ZMZB_fake_script)()
