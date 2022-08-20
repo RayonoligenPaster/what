@@ -29,13 +29,12 @@ nnpasteWATERMARKWOOWOWOOWOW.Name = "nnpaste WATERMARK WOOWOWOOWOW"
 nnpasteWATERMARKWOOWOWOOWOW.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 nnpasteWATERMARKWOOWOWOOWOW.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 nnpasteWATERMARKWOOWOWOOWOW.DisplayOrder = 420133769
-nnpasteWATERMARKWOOWOWOOWOW.IgnoreGuiInset = true
 
 main.Name = "main"
 main.Parent = nnpasteWATERMARKWOOWOWOOWOW
 main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.68255657, 0, -0.000261604902, 0)
+main.Position = UDim2.new(-0, 0, -0, 0)
 main.Size = UDim2.new(0.317187488, 0, 0.0364025682, 0)
 
 purplebottom.Name = "purple bottom"
